@@ -1,0 +1,193 @@
+.ui_wrapper {
+  z-index: 0;
+}
+
+.logo_wrapper {
+  width: 100%;
+  display: flex;
+  pointer-events: none;
+  justify-content: center;
+  position: absolute;
+}
+
+.adi_logo {
+  margin-top: $gutter;
+}
+
+.sound_icon_wrapper {
+  @include flex_centre;
+}
+
+.sound_icon_main {
+  position: fixed;
+  bottom: $gutter;
+  left: $gutter;
+  z-index: 1000;
+}
+
+.hamburger_menu_icon_wrapper {
+  position: fixed;
+  top: $gutter;
+  right: $gutter;
+}
+
+// scrolldown indicator
+.scrolldown_wrapper {
+  position: absolute;
+  @include flex_centre;
+  width: 100%;
+  bottom: $g1;
+  pointer-events: none;
+  text-transform: lowercase;
+}
+.scroll_inner {
+  max-width: $g2;
+  min-width: 150px;
+  @include flex_centre;
+  flex-direction: column;
+  gap: $gutter / 4;
+}
+.scrollDownLottie {
+  width: 40px;
+}
+.swipeUpLottie {
+  width: 120px;
+  height: 75px;
+}
+.scrolldown_text {
+  text-align: center;
+}
+
+//download buttons
+.download_btn_outer {
+  position: fixed;
+  bottom: $gutter;
+  right: $gutter;
+  @include flex_centre;
+  gap: $gutter / 2;
+  height: 20px;
+  :hover {
+    scale: 1.1;
+  }
+}
+
+.CTA_inner {
+  border: $border;
+  background: $black;
+  padding: 5px 15px;
+  height: 100%;
+  @include flex_centre;
+  gap: 0!important;
+  p {
+    width: 100%;
+  }
+  width: 177.5px;
+  margin-left: auto;
+}
+
+.download_btn_icon {
+  height: 100%;
+  @include flex_centre;
+  width: 15px;
+  padding-top: 6px;
+  position: static !important;
+}
+
+.arrow_icon {
+  height: 100%;
+  @include flex_centre;
+  width: 25px;
+  padding-top: 5px;
+  position: static !important;
+}
+
+.arrow_lottie {
+  transform: rotate(90deg);
+  @include flex_centre;
+  width: 45px;
+}
+
+.arrow_lottie > svg {
+  transform: unset !important;
+}
+
+.download_lottie {
+  @include flex_centre;
+  width: 40px;
+}
+
+.download_lottie > svg {
+  transform: unset !important;
+}
+
+//back btn
+.back_btn_inner {
+  position: absolute;
+  bottom: $g1;
+  height: auto;
+  width: 150px;
+  text-align: center;
+  left: calc(50vw - 75px);
+  padding: 0 15px 0 10px;
+  gap: 0 !important;
+  background: rgba($color: #000000, $alpha: 0.2);
+  p {
+    width: 70%;
+  }
+}
+
+// form submit button
+.form_btn_wrapper {
+  position: absolute;
+  top: $gutter;
+  right: $gutter;
+  display: flex;
+  gap: $gutter / 4;
+}
+
+// close buttons
+.close_btn_outer {
+  @include flex_centre;
+}
+.close_btn_wrapper {
+  border-bottom: $border;
+  position: relative;
+  bottom: -3vh;
+}
+
+.close_btn {
+  margin-bottom: $gutter / 4;
+}
+
+@media (max-width: 768px) {
+  .CTA_inner {
+    width: 165px !important;
+  }
+  .back_btn_inner {
+    padding: 0 7.5px 0 5px;
+    gap: 0 !important;
+    width: 130px !important;
+    left: calc(50vw - 60px);
+    p {
+      font-size: 14px;
+    }
+  }
+  .arrow_lottie {
+    width: 45px;
+  }
+  .close_btn_wrapper {
+    bottom: -1.5vh;
+  }
+  .CTA_inner p {
+    width: 90%;
+  }
+  .modal_header {
+    margin-bottom: 5px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .sound_icon_main {
+    bottom: $gutter * 2;
+  }
+}

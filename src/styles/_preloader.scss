@@ -1,0 +1,54 @@
+.preloader_wrapper {
+  @include fullscreen_wrapper;
+  @include flex_centre;
+  flex-direction: column;
+  z-index: 2;
+}
+
+.preloader_text_wrapper {
+  text-align: center;
+  letter-spacing: 0.1em;
+  max-width: 45vw;
+  .trademark {
+    vertical-align: super;
+    font-size: 16px;
+    font-family: $adihaus;
+  }
+}
+
+// progress lottie
+$progress_width: 80px;
+$progress_height: 80px;
+
+.progress_circle,
+.progress_text_wrapper {
+  position: fixed;
+  bottom: $g2;
+  bottom: calc(25vh - ($progress_height / 2));
+  width: $progress_width;
+  height: $progress_height;
+}
+
+.progress_text_wrapper {
+  @include flex_centre;
+}
+
+.progress_text {
+  font-size: 0.75rem;
+}
+
+@media (max-width: 768px) {
+  .preloader_text_wrapper {
+    max-width: 75vw;
+  }
+}
+
+@media (max-width: 480px) {
+  .progress_circle,
+  .progress_text_wrapper {
+    bottom: calc(15vh - ($progress_height / 2));
+    width: 65px;
+    height: 65px;
+    font-size: 12px;
+  }
+}

@@ -1,0 +1,64 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.form_input {
+  width: 100%;
+  outline: none;
+  background: $black;
+  border: none;
+  border-bottom: $border;
+  padding-bottom: 10px;
+  margin-top: 40px;
+  color: $white;
+}
+
+input::-webkit-input-placeholder,
+input:-webkit-input-placeholder,
+input::placeholder {
+  font-family: $adihaus !important;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input:focus::placeholder,
+textarea:focus::placeholder {
+  color: transparent;
+}
+
+textarea {
+  resize: none;
+  font-family: $adihaus !important;
+}
+
+::placeholder {
+  font-family: $adihaus;
+  color: $white;
+  opacity: 1;
+}
+
+.submit_btn {
+  background: $black;
+  border: $border;
+  color: $white;
+  margin-top: 40px;
+  padding: 10px;
+  margin-left: auto;
+  font-family: $adihaus;
+}
+
+// media queries
+@media (max-width: 720px) {
+  .form_input {
+    margin-top: 4vh;
+  }
+  .submit_btn{
+    margin-top: 4vh;
+  }
+}

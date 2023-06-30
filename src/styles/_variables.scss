@@ -1,0 +1,33 @@
+// fonts
+$adihaus: var(--font-adihaus, Arial, Helvetica, sans-serif);
+$adineue: var(--font-adineue, Arial, Helvetica, sans-serif);
+
+// colors
+$white: #ffffff;
+$off-white: #d9d9d9;
+$gray: #e3e3e3;
+$black: #000000;
+
+// breakpoints
+$mobile: 557px;
+
+// grid-sizes
+$g1: calc(100vw / 12 * 1);
+$g2: calc(100vw / 12 * 2);
+$g3: calc(100vw / 12 * 3);
+$g4: calc(100vw / 12 * 4);
+$g5: calc(100vw / 12 * 5);
+$g6: calc(100vw / 12 * 6);
+$g7: calc(100vw / 12 * 7);
+$g8: calc(100vw / 12 * 8);
+$g9: calc(100vw / 12 * 9);
+$g10: calc(100vw / 12 * 10);
+$g11: calc(100vw / 12 * 11);
+$g12: calc(100vw / 12 * 12);
+
+// reusable sizes
+$gutter: calc($g1 / 4);
+
+// other
+$border: 1px solid #d9d9d9;
+$video-border: 1px solid #0f0e0e;
